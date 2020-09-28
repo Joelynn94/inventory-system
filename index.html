@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Inventory System</title>
+</head>
+<body>
+  <nav>
+    <h1>Inventory System</h1>
+    <p>Add inventory items with the ability check to see if an item already exists within the inventory</p>
+  </nav>
+
+  <main>
+    <div class="container">
+
+      <div class="inventory">
+        <form id="inventoryForm" class="table-header">
+          <input class="inventory-input" type="text" placeholder="Enter an item to add to the inventory list" id="inventoryInput">
+          <button type="submit" class="btn">Add</button>
+        </form>
+
+        <table class="inventory-table">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Item</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="itemId"></td>
+              <td id="inventoryItem"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="inventory-search">
+        <form id="searchForm" class="table-header">
+          <input class="search" type="text" placeholder="Search the inventory" id="inventorySearch">
+          <button type="submit" class="btn">Search</button>
+        </form>
+        <table class="search-table">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Item</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="searchItemId"></td>
+              <td id="searchItem"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+  
+  <script src="index.js"></script>
+</body>
+</html>
